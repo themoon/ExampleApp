@@ -44,7 +44,7 @@ struct ContentView: View {
                     }
                 }
                 //
-                NavigationLink(destination: Text("안녕하세요 yejik님")){
+                NavigationLink(destination: MyTextView()){
                     Text("다음 메뉴로 이동")
                 }.padding(.top, 100)
             }
