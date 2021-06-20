@@ -14,25 +14,16 @@ struct ContentView: View {
     @State
     private var isActivated : Bool = false
     
+    @State
+    private var MyTextView_toggle : Bool = false
+    
     var body: some View {
         NavigationView{
             VStack{
                 HStack{
-                    VStack{
-                        Text("git test")
-                        Text("git test")
-                        Text("git test")
-                    }.background(Color.blue)
-                    VStack{
-                        Text("git test")
-                        Text("git test")
-                        Text("git test")
-                    }.background(Color.blue)
-                    VStack{
-                        Text("git test")
-                        Text("git test")
-                        Text("git test")
-                    }.background(Color.blue)
+                    MyVstackView($isActivated)
+                    MyVstackView($isActivated)
+                    MyVstackView($isActivated)
                 }.padding(isActivated ? 50 : 10)
                 .background(isActivated ? Color.yellow : Color.black)
                 .font(.custom("FONT_NAME", size: 20))
@@ -44,9 +35,10 @@ struct ContentView: View {
                     }
                 }
                 //
-                NavigationLink(destination: MyTextView()){
-                    Text("다음 메뉴로 이동")
+                NavigationLink(destination: MyTextView($isActivated)){
+                    Text("다음 메뉴로 이동")     
                 }.padding(.top, 100)
+                
             }
         }
     }

@@ -9,8 +9,15 @@ import SwiftUI
 
 struct MyTextView: View {
     
-    @State
-    private var index : Int = 0
+        @State
+        private var index : Int = 0
+        
+        @Binding
+        var isActivated : Bool
+        
+        init(_ abc: Binding<Bool> = .constant(false)) {
+             _isActivated = abc
+        }
     
     private let backgroundColors = [
         Color.blue,
@@ -24,10 +31,13 @@ struct MyTextView: View {
         VStack{
             Spacer()
             Text("hi yejik")
-                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 100)
+            Text("활성화 상태 : \(String(isActivated))")
+                .foregroundColor(isActivated ? Color.yellow : Color.gray)
+                .background(Color.black)
             Spacer()
         }.background(backgroundColors[index])
-        .edgesIgnoringSafeArea(.all)
+        .edgesIgnoringSafeArea(.bottom)
         .onTapGesture{
             if(index == backgroundColors.count - 1){
                 index = 0
