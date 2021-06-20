@@ -21,6 +21,11 @@ struct ContentView: View {
         NavigationView{
             VStack{
                 HStack{
+                    Text("네이버")
+                    Text("다음")
+                    Text("구글")
+                }
+                HStack{
                     MyVstackView($isActivated)
                     MyVstackView($isActivated)
                     MyVstackView($isActivated)
@@ -28,7 +33,7 @@ struct ContentView: View {
                 .background(isActivated ? Color.yellow : Color.black)
                 .font(.custom("FONT_NAME", size: 20))
                 .onTapGesture{
-                    print("Hstack이 클릭 되었습니다.")
+                    //print("Hstack이 클릭 되었습니다.")
                     
                     withAnimation{
                         self.isActivated.toggle()
@@ -45,9 +50,6 @@ struct ContentView: View {
    
 }
 
-
-
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
@@ -55,4 +57,3 @@ struct ContentView_Previews: PreviewProvider {
         }
     }
 }
-
