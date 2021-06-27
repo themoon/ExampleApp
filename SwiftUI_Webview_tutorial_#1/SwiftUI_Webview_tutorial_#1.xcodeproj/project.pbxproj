@@ -11,6 +11,8 @@
 		971AFF24267FAAB100087E33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971AFF23267FAAB100087E33 /* ContentView.swift */; };
 		971AFF26267FAAB300087E33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 971AFF25267FAAB300087E33 /* Assets.xcassets */; };
 		971AFF29267FAAB300087E33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 971AFF28267FAAB300087E33 /* Preview Assets.xcassets */; };
+		971AFF31267FABB500087E33 /* MyWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971AFF30267FABB500087E33 /* MyWebView.swift */; };
+		978EAB1B2686FEF400640977 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978EAB1A2686FEF400640977 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		971AFF25267FAAB300087E33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		971AFF28267FAAB300087E33 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		971AFF2A267FAAB300087E33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		971AFF30267FABB500087E33 /* MyWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWebView.swift; sourceTree = "<group>"; };
+		978EAB1A2686FEF400640977 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 		971AFF27267FAAB300087E33 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				971AFF30267FABB500087E33 /* MyWebView.swift */,
+				978EAB1A2686FEF400640977 /* File.swift */,
 				971AFF28267FAAB300087E33 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				971AFF24267FAAB100087E33 /* ContentView.swift in Sources */,
+				978EAB1B2686FEF400640977 /* File.swift in Sources */,
+				971AFF31267FABB500087E33 /* MyWebView.swift in Sources */,
 				971AFF22267FAAB100087E33 /* SwiftUI_Webview_tutorial__1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
